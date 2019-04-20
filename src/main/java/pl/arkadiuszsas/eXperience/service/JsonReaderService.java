@@ -1,5 +1,7 @@
 package pl.arkadiuszsas.eXperience.service;
 
+import java.util.ArrayList;
+
 import pl.arkadiuszsas.eXperience.repository.RepositoryInfo;
 
 public interface JsonReaderService {
@@ -10,5 +12,5 @@ public interface JsonReaderService {
 	 * @param 	username	name of the user for whom the latest modified repository information should be returned
 	 * @return	all declared values from <i>RepositoryInfo</i> for latest modified repository in JSON format
 	 */
-	public RepositoryInfo[] readRepositoryInfo(String username);
+	public ArrayList<RepositoryInfo> readRepositoryInfo(String username);
 }

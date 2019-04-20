@@ -1,5 +1,6 @@
 package pl.arkadiuszsas.eXperience.service;
 
+import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
@@ -15,12 +16,12 @@ public class RepositoryServiceImpl implements RepositoryService {
 	JsonReaderService jsonReaderService;
 	
 	private Map<String, String> repositoryInfo = new LinkedHashMap<String, String>();
-	private RepositoryInfo[] repositories = null;
+	private ArrayList<RepositoryInfo> repositories = null;
 	
 	@Override
 	public Map<String, String> repositoryInfo(String username) {
 		repositories = jsonReaderService.readRepositoryInfo(username);
-		repositoryInfo.put("name", repositories[0].getName());		
+		repositoryInfo.put("name", repositories.get(0).getName());		
 		return repositoryInfo;
 	}
 
