@@ -13,7 +13,7 @@
 	<artifactId>e-Xperience</artifactId>
 	<version>1.0</version>
 	<name>e-Xperience</name>
-	<description>An application that returns the name of the last modified repository.</description>
+	<description>An application that returns the name of the latest modified repository.</description>
 
 	<properties>
 		<java.version>11</java.version>
@@ -31,11 +31,6 @@
 			<scope>test</scope>
 		</dependency>
 
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<scope>test</scope>
-		</dependency>
 	</dependencies>
 
 	<build>

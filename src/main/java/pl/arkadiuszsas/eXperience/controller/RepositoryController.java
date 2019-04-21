@@ -1,6 +1,5 @@
 package pl.arkadiuszsas.eXperience.controller;
 
-import java.util.LinkedHashMap;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,8 +18,6 @@ public class RepositoryController {
 	@Value("${repository.username}")
 	private String requestedUsername;
 	
-	private Map<String, String> latestModifiedRepositoryInfo = new LinkedHashMap<String, String>();
-	
 	/**
 	 * Allows to display information about latest modified repository in JSON format.
 	 * Usage: http://localhost:8090/latestModifiedRepository
@@ -29,8 +26,7 @@ public class RepositoryController {
 	 */
 	@GetMapping("/latestModifiedRepository")
 	public Map<String, String> lastestModifiedRepository() {
-		latestModifiedRepositoryInfo = repositoryService.repositoryInfo(requestedUsername);
-		return latestModifiedRepositoryInfo;
+		return repositoryService.repositoryInfo(requestedUsername);
 	}
 	
 }

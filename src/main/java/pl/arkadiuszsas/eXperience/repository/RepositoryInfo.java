@@ -3,7 +3,7 @@ package pl.arkadiuszsas.eXperience.repository;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 /**
- * Class contains values that describe the requested latest modified repository.
+ * Class contains values to describe the requested latest modified repository.
  */
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class RepositoryInfo {
