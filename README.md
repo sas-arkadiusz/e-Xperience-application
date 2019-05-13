@@ -1,4 +1,4 @@
-# Lastest Repository Name
+# Latest Repository Name
 
 ## Table of contents
 * [General Info](#general-info)
