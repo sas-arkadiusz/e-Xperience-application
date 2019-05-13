@@ -21,7 +21,7 @@ This project is created with:
 * To build the project use following command: mvn clean package
 
 2. Running
-* After building the application run following command to start it: `java -jar target/cognifide.book.library.management-0.0.1-SNAPSHOT.jar`.
+* After building the application run following command to start it: `java -jar target/e-Xperience-1.0.jar`.
 * You can also start the application with following command: `mvn spring-boot:run`. <br>
 
 * By default, the application runs on 8090 port. To run the application on custom port use following command: `mvn spring-boot:run -Dspring-boot.run.arguments=--server.port={your port}`.
